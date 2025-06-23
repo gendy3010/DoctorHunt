@@ -2,10 +2,7 @@ import 'package:doc_hunt/config/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:google_fonts/google_fonts.dart';
 
-import '../doctors/find_doctors_screen.dart';
 
 class DrawerMenu extends StatefulWidget {
   const DrawerMenu({super.key});
@@ -19,6 +16,8 @@ class _DrawerMenuState extends State<DrawerMenu> {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+
     return Container(
       color: const Color(0xFF536184),
       padding: const EdgeInsets.only(top: 80, left: 20, right: 20, bottom: 40),
@@ -83,7 +82,7 @@ class _DrawerMenuState extends State<DrawerMenu> {
               Icons.person,
               'My Doctors',
               onTap: () {
-           Get.toNamed(AppRoutes.mydoctors);
+           Get.toNamed(AppRoutes.myDoctors);
           }),
           _buildMenuItem(context, 1, Icons.receipt_long_outlined, 'Medical Records',onTap: (){
             Get.toNamed(AppRoutes.medicalRecords);

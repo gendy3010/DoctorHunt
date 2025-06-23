@@ -2,7 +2,6 @@ import 'package:doc_hunt/screens/home/MainZoomScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../screens/home/home_screen.dart';
 
 class OnBoardingButton extends StatefulWidget {
   final String text;

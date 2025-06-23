@@ -40,13 +40,6 @@ class _SplashScreenState extends State<SplashScreen> {
               const SizedBox(
                 height: 25,
               ),
-              Text(
-                "Doctor Hunt",
-                style: GoogleFonts.rubik(
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
-                    fontSize: 25),
-              )
             ],
           )),
     );
