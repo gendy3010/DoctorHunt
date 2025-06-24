@@ -21,5 +21,9 @@ class AppRoutes {
   static const String cartPage='/cartPage';
   static const String addRecordsScreen='/addRecordsScreen';
   static const String recordsListScreen='/recordsListScreen';
+  static const String medicineOrdersScreen='/medicineOrdersScreen';
+  static const String enableLocationServices='/enableLocationServices';
+  static const String doctorDetailsScreen='/doctorDetailsScreen';
+  static const String appointmentScreen='/appointmentScreen';
 
 }

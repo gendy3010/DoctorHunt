@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'home/home_screen.dart';
+import '../home/home_screen.dart';
 
 class OrderConfirmationScreen extends StatelessWidget {
   @override

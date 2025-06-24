@@ -1,8 +1,8 @@
 // ignore_for_file: deprecated_member_use
 
 
-import 'package:doc_hunt/screens/pharmacy_page.dart';
-import 'package:doc_hunt/screens/profile_screen.dart';
+import 'package:doc_hunt/screens/pharmacy/pharmacy_page.dart';
+import 'package:doc_hunt/screens/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -12,8 +12,8 @@ import '../../widgets/navigation/custom_bottom_navbar.dart';
 import '../../widgets/search/custom_search_bar.dart';
 import '../doctors/find_doctors_screen.dart';
 import '../doctors/popular_doctor_screen.dart';
-import '../favorite_screen.dart';
-import '../live_chat_screen.dart';
+import '../favorite/favorite_screen.dart';
+import '../live_chat/live_chat_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -30,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
-    // Initialize with empty widgets or non-context-dependent widgets
+    // Initialize with empty bottom_sheet or non-context-dependent bottom_sheet
     _pages = [
       Container(), // Placeholder
       const FavoriteScreen(),

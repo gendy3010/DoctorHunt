@@ -10,7 +10,6 @@ class CartController extends GetxController {
   var promoCode = ''.obs;
   var discount = 0.0.obs;
 
-  // Add item to cart
   void addToCart(CartItem item) {
     int index = cartItems.indexWhere((i) => i.name == item.name);
     if (index != -1) {
@@ -50,7 +49,6 @@ class CartController extends GetxController {
     promoCode.value = '';
   }
 
-  // Apply promo code
   void applyPromoCode(String code) {
     promoCode.value = code;
 
@@ -61,7 +59,6 @@ class CartController extends GetxController {
     }
   }
 
-  // Getters for calculations
   double get totalPrice =>
       cartItems.fold(0, (sum, item) => sum + (item.price * item.quantityCount));
 

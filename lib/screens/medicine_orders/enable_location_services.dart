@@ -1,16 +1,22 @@
-import 'package:doc_hunt/widgets/buttons/Custom%20Button.dart';
+
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../config/app_routes.dart';
+import '../../widgets/buttons/Custom Button.dart';
+import '../../widgets/buttons/book_now_button.dart';
 import '../../widgets/header/top_section.dart';
+import '../../widgets/search/custom_search_bar.dart';
 
-
-class MedicalRecordsScreen extends StatelessWidget {
-  const MedicalRecordsScreen({super.key});
+class EnableLocationServices extends StatelessWidget {
+  EnableLocationServices({super.key});
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.white,
@@ -28,10 +34,10 @@ class MedicalRecordsScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               TopSection(
-                text: 'Find Doctors',
+                text: 'Enable Location Services',
                 backButton: const Icon(Icons.chevron_left),
                 onPressed: () {
-                  Get.toNamed(AppRoutes.home);
+                  Get.toNamed(AppRoutes.mainZoomScreen);
 
                 },
               ),
@@ -40,12 +46,12 @@ class MedicalRecordsScreen extends StatelessWidget {
               Center(
                 child: CircleAvatar(
                   radius: 100,
-                  child: Image.asset('assets/images/medicalRecords.png'),
+                  child: Image.asset('assets/images/location.png'),
                 ),
               ),
               SizedBox(height: 15,),
               Text(
-                'Add a medical record.',
+                'Location',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontFamily: 'Rubik',
@@ -55,17 +61,17 @@ class MedicalRecordsScreen extends StatelessWidget {
               ),
               Text(
                 textAlign: TextAlign.center,
-                'A detailed health history helps a doctor diagnose\nyou better.',
+                'Your location services are switched off. Please\n enable location, to help us serve better.',
                 style: TextStyle(
                   fontSize: 13,
                   color: Color(0xFF677294),
                 ),
               ),
               SizedBox(height: 100,),
-              CustomButton(title: 'Add a record',
-              onTap: (){
-                Get.toNamed(AppRoutes.addRecordsScreen);
-              },
+              CustomButton(title: 'Enable Location',
+                onTap: (){
+                  Get.toNamed(AppRoutes.pharmacyPage);
+                },
               ),
 
 
@@ -76,4 +82,6 @@ class MedicalRecordsScreen extends StatelessWidget {
       ),
     );
   }
+
+
 }

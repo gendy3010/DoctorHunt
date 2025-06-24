@@ -37,7 +37,7 @@ class FindDoctorsScreen extends StatelessWidget {
                 text: 'Find Doctors',
                 backButton: const Icon(Icons.chevron_left),
                 onPressed: () {
-                  Get.toNamed(AppRoutes.home);
+                  Get.toNamed(AppRoutes.mainZoomScreen);
 
                 },
               ),

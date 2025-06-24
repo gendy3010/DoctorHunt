@@ -7,9 +7,9 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../../controller/cart_controller.dart';
 import '../../widgets/header/top_section.dart';
-import '../card_payment_screen.dart';
-import '../delivery_address_screen.dart';
-import '../order_confirmation_screen.dart';
+import '../card_payment/card_payment_screen.dart';
+import '../delivery_address/delivery_address_screen.dart';
+import '../card_payment/order_confirmation_screen.dart';
 
 class CheckoutPage extends StatefulWidget {
   const CheckoutPage({super.key});

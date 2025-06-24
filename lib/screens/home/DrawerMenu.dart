@@ -16,7 +16,6 @@ class _DrawerMenuState extends State<DrawerMenu> {
 
   @override
   Widget build(BuildContext context) {
-    double screenWidth = MediaQuery.of(context).size.width;
 
     return Container(
       color: const Color(0xFF536184),
@@ -87,8 +86,12 @@ class _DrawerMenuState extends State<DrawerMenu> {
           _buildMenuItem(context, 1, Icons.receipt_long_outlined, 'Medical Records',onTap: (){
             Get.toNamed(AppRoutes.medicalRecords);
           }),
-          _buildMenuItem(context, 2, Icons.payment, 'Payments'),
-          _buildMenuItem(context, 3, Icons.move_to_inbox_rounded, 'Medicine Orders'),
+          _buildMenuItem(context, 2, Icons.payment, 'Payments',onTap: (){
+            Get.toNamed(AppRoutes.cardPaymentScreen);
+          }),
+          _buildMenuItem(context, 3, Icons.move_to_inbox_rounded, 'Medicine Orders',onTap: (){
+            Get.toNamed(AppRoutes.medicineOrdersScreen);
+          }),
           _buildMenuItem(context, 4, Icons.security, 'Privacy & Policy'),
           _buildMenuItem(context, 5, Icons.help, 'Help Center'),
           _buildMenuItem(context, 6, Icons.settings, 'Settings'),

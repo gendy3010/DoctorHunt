@@ -3,7 +3,7 @@ import 'package:flutter_credit_card/flutter_credit_card.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../widgets/header/top_section.dart';
+import '../../widgets/header/top_section.dart';
 
 class CardPaymentScreen extends StatefulWidget {
   const CardPaymentScreen({super.key});

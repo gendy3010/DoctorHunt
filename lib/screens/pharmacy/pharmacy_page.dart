@@ -5,11 +5,11 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../controller/cart_controller.dart';
-import '../models/cart_item.dart';
-import '../widgets/header/custom_headline.dart';
-import '../widgets/header/top_section.dart';
-import 'cart/cart_page.dart';
+import '../../controller/cart_controller.dart';
+import '../../models/cart_item.dart';
+import '../../widgets/header/custom_headline.dart';
+import '../../widgets/header/top_section.dart';
+import '../cart/cart_page.dart';
 
 class PharmacyPage extends StatefulWidget {
   const PharmacyPage({super.key});

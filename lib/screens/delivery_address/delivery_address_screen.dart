@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../widgets/header/top_section.dart';
+import '../../widgets/header/top_section.dart';
 
 class DeliveryAddressScreen extends StatefulWidget {
   final Map<String, String>? initialAddress;

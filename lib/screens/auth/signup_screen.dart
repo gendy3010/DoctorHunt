@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../widgets/buttons/social_button.dart';
 import 'login_screen.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -216,29 +217,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
     );
   }
 
-  Widget socialButton(String text, String iconPath, {bool isSmallScreen = false}) {
-    return ElevatedButton.icon(
-      onPressed: () {},
-      icon: Image.asset(iconPath, height: isSmallScreen ? 16 : 19),
-      label: Text(
-        text,
-        style: GoogleFonts.rubik(
-          fontSize: isSmallScreen ? 14 : 16,
-          fontWeight: FontWeight.w300,
-          color: const Color(0xff677294),
-        ),
-      ),
-      style: ElevatedButton.styleFrom(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        padding: EdgeInsets.all(isSmallScreen ? 16 : 26),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12),
-          side: BorderSide.none,
-        ),
-      ),
-    );
-  }
 
   Widget customTextField({
     required String hintText,

@@ -1,13 +1,15 @@
-// ignore_for_file: deprecated_member_use
 
 
+import 'package:doc_hunt/config/app_routes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../widgets/header/custom_headline.dart';
-import '../widgets/header/top_section.dart';
-import '../widgets/search/custom_search_bar.dart';
-import 'doctors/find_doctors_screen.dart';
+import '../../widgets/header/custom_headline.dart';
+import '../../widgets/header/top_section.dart';
+import '../../widgets/search/custom_search_bar.dart';
+import '../doctors/find_doctors_screen.dart';
 
 class FavoriteScreen extends StatefulWidget {
   const FavoriteScreen({Key? key}) : super(key: key);
@@ -113,6 +115,9 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
       itemCount: doctors.length,
       itemBuilder: (context, index) {
         return _buildDoctorCard(
+          onTap: (){
+            Get.toNamed(AppRoutes.doctorDetailsScreen);
+          },
           doctor: doctors[index],
           onFavoriteToggle: () {
             setState(() {
@@ -127,65 +132,69 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
   Widget _buildDoctorCard({
     required Map<String, dynamic> doctor,
     required VoidCallback onFavoriteToggle,
+    required VoidCallback onTap,
   }) {
-    return Card(
-      elevation: 0.5,
-      color: const Color(0xffFFFFFF),
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(15),
-      ),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 12),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Stack(
-              clipBehavior: Clip.none,
-              children: [
-                CircleAvatar(
-                  radius: 40,
-                  backgroundImage: AssetImage(doctor['image']),
-                ),
-                Positioned(
-                  top: -10,
-                  right: -10,
-                  child: GestureDetector(
-                    onTap: onFavoriteToggle,
-                    child: Container(
-                      padding: const EdgeInsets.all(6),
-                      decoration: const BoxDecoration(
-                        color: Color(0xffFFFFFF),
-                        shape: BoxShape.circle,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black12,
-                            blurRadius: 4,
-                            spreadRadius: 2,
-                          ),
-                        ],
-                      ),
-                      child: Icon(
-                        doctor['isFavorite'] ? Icons.favorite : Icons.favorite_border,
-                        color: doctor['isFavorite'] ? const Color(0xffFB0000) : const Color(0xff677294),
-                        size: 18,
+    return GestureDetector(
+      onTap: onTap,
+      child: Card(
+        elevation: 0.5,
+        color: const Color(0xffFFFFFF),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(15),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 12),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Stack(
+                clipBehavior: Clip.none,
+                children: [
+                  CircleAvatar(
+                    radius: 40,
+                    backgroundImage: AssetImage(doctor['image']),
+                  ),
+                  Positioned(
+                    top: -10,
+                    right: -10,
+                    child: GestureDetector(
+                      onTap: onFavoriteToggle,
+                      child: Container(
+                        padding: const EdgeInsets.all(6),
+                        decoration: const BoxDecoration(
+                          color: Color(0xffFFFFFF),
+                          shape: BoxShape.circle,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black12,
+                              blurRadius: 4,
+                              spreadRadius: 2,
+                            ),
+                          ],
+                        ),
+                        child: Icon(
+                          doctor['isFavorite'] ? Icons.favorite : Icons.favorite_border,
+                          color: doctor['isFavorite'] ? const Color(0xffFB0000) : const Color(0xff677294),
+                          size: 18,
+                        ),
                       ),
                     ),
                   ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 10),
-            Text(
-              doctor['name'],
-              style: GoogleFonts.rubik(fontSize: 15,  fontWeight: FontWeight.w500,color: const Color(0xff333333)),
-              overflow: TextOverflow.ellipsis,
-            ),
-            Text(
-              doctor['specialty'],
-              style: GoogleFonts.rubik(fontSize: 12, fontWeight: FontWeight.w400, color: const Color(0xff0EBE7F)),
-              overflow: TextOverflow.ellipsis,
-            ),
-          ],
+                ],
+              ),
+              const SizedBox(height: 10),
+              Text(
+                doctor['name'],
+                style: GoogleFonts.rubik(fontSize: 15,  fontWeight: FontWeight.w500,color: const Color(0xff333333)),
+                overflow: TextOverflow.ellipsis,
+              ),
+              Text(
+                doctor['specialty'],
+                style: GoogleFonts.rubik(fontSize: 12, fontWeight: FontWeight.w400, color: const Color(0xff0EBE7F)),
+                overflow: TextOverflow.ellipsis,
+              ),
+            ],
+          ),
         ),
       ),
     );

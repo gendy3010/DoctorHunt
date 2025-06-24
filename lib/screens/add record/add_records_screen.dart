@@ -1,8 +1,7 @@
-import 'package:flutter/cupertino.dart';
+import 'package:doc_hunt/screens/add%20record/widgets/record_type.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import '../../config/app_routes.dart';
 import '../../widgets/buttons/Custom Button.dart';
 import '../../widgets/header/top_section.dart';
@@ -80,7 +79,7 @@ class _AddRecordsScreenState extends State<AddRecordsScreen> {
               ),
               const Spacer(),
               Center(
-                child: Custombutton(
+                child: CustomButton(
                   title: 'Upload record',
                   onTap: () async {
                     final result = await addRecordSheet(context);
@@ -268,77 +267,4 @@ class _AddRecordsScreenState extends State<AddRecordsScreen> {
   }
 }
 
-class RecordTypeSelector extends StatefulWidget {
-  final String selectedType;
-  final Function(String) onSelected;
 
-  const RecordTypeSelector({
-    Key? key,
-    required this.onSelected,
-    this.selectedType = '',
-  }) : super(key: key);
-
-  @override
-  State<RecordTypeSelector> createState() => _RecordTypeSelectorState();
-}
-
-class _RecordTypeSelectorState extends State<RecordTypeSelector> {
-  late String selected;
-
-  final List<Map<String, dynamic>> types = [
-    {'label': 'Report', 'icon': Icons.insert_drive_file},
-    {'label': 'Invoice', 'icon': Icons.receipt},
-    {'label': 'Prescription', 'icon': Icons.medical_services},
-  ];
-
-  @override
-  void initState() {
-    super.initState();
-    selected = widget.selectedType;
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    double screenWidth = MediaQuery.of(context).size.width;
-
-    return Container(
-      padding: const EdgeInsets.symmetric(vertical: 10),
-      decoration: const BoxDecoration(
-        border: Border(bottom: BorderSide(color: Colors.black12)),
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: types.map((item) {
-          final isSelected = selected == item['label'];
-          return GestureDetector(
-            onTap: () {
-              setState(() {
-                selected = item['label'];
-              });
-              widget.onSelected(selected);
-            },
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Icon(
-                  item['icon'],
-                  color: isSelected ? const Color(0xff0EBE7F) : Colors.grey,
-                ),
-                const SizedBox(height: 4),
-                Text(
-                  item['label'],
-                  style: TextStyle(
-                    fontSize: screenWidth * 0.035,
-                    color: isSelected ? const Color(0xff0EBE7F) : Colors.grey,
-                  ),
-                ),
-              ],
-            ),
-          );
-        }).toList(),
-      ),
-    );
-  }
-}
-
-// MedicalRecord model

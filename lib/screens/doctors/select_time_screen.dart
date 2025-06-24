@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../widgets/header/top_section.dart';
+import '../../widgets/header/top_section.dart';
 
 class SelectTimeScreen extends StatefulWidget {
   const SelectTimeScreen({super.key});

@@ -78,35 +78,35 @@ class PopularDoctorScreen extends StatelessWidget {
                             physics: const NeverScrollableScrollPhysics(),
                             scrollDirection: Axis.vertical,
                             children: [
-                              _buildCategoryCard(
+                              buildCategoryCard(
                                   "Dr. Pediatrician",
                                   "Specialist Cardiologist",
                                   2.4,
                                   2475,
                                   true,
                                   "assets/images/popular_screen/popular_category_doctor1.png"),
-                              _buildCategoryCard(
+                              buildCategoryCard(
                                   "Dr. Mistry Brick",
                                   "Specialist Dentist",
                                   2.8,
                                   2893,
                                   false,
                                   "assets/images/popular_screen/popular_category_doctor2.png"),
-                              _buildCategoryCard(
+                              buildCategoryCard(
                                   "Dr. Ether Wall",
                                   "Specialist Cancer",
                                   2.7,
                                   2754,
                                   true,
                                   "assets/images/popular_screen/popular_category_doctor3.png"),
-                              _buildCategoryCard(
+                              buildCategoryCard(
                                   "Dr. Pediatrician",
                                   "Specialist Cancer",
                                   2.7,
                                   2754,
                                   true,
                                   "assets/images/popular_screen/popular_category_doctor4.png"),
-                              _buildCategoryCard(
+                              buildCategoryCard(
                                   "Dr. Mistry Brick",
                                   "Specialist cardiologist",
                                   2.7,
@@ -167,7 +167,7 @@ class PopularDoctorScreen extends StatelessWidget {
                       fontWeight: FontWeight.w300),
                 ),
                 const SizedBox(height: 3),
-                _buildStarRating(4)
+                buildStarRating(4)
               ],
             ),
           ),
@@ -176,7 +176,7 @@ class PopularDoctorScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildCategoryCard(String name, String specialty, double rating,
+  Widget buildCategoryCard(String name, String specialty, double rating,
       int views, bool isFavorite, String imagePath) {
     return Card(
       elevation: 0.5,
@@ -229,7 +229,7 @@ class PopularDoctorScreen extends StatelessWidget {
   }
 }
 
-Widget _buildStarRating(double rating) {
+Widget buildStarRating(double rating) {
   int fullStars = rating.floor();
   bool halfStar = (rating - fullStars) >= 0.5;
 

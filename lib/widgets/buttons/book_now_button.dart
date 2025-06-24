@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../screens/select_time_screen.dart';
+import '../../screens/doctors/select_time_screen.dart';
 
 class BookNowButton extends StatelessWidget {
   final String text;
