@@ -1,16 +1,31 @@
-# doc_hunt
+# Doctor Hunt 🩺
 
-A new Flutter project.
+Doctor Hunt is a Flutter-based mobile application designed to simplify the process of booking doctor appointments and ordering pharmacy medicines. It provides a smooth and user-friendly experience from onboarding to secure checkout.
 
-## Getting Started
+## ✨ Features
 
-This project is a starting point for a Flutter application.
+- Beautiful onboarding screens
+- User authentication (Sign up & Login)
+- Browse doctors and book appointments
+- Pharmacy section with medicine cart
+- Credit card payment integration
+- Address management with stepper widget
+- Promo code and order confirmation
 
-A few resources to get you started if this is your first Flutter project:
+## 📸 Screenshots
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Login Screen
+![Menu Screen](assets/images/screenshots/menu_screen.jpg)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+> Images must exist in the `assets/images` folder inside your repository to render correctly here.
+
+## 🚀 Getting Started
+
+To run the app locally:
+
+```bash
+git clone https://github.com/gendy3010/DoctorHunt.git
+cd DoctorHunt
+flutter pub get
+flutter run

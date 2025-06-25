@@ -142,7 +142,7 @@ class StarRating extends StatefulWidget {
   const StarRating({
     super.key,
     this.maxStars = 5,
-    this.starSize = 18,
+    this.starSize = 24,
     this.onRatingChanged,
   });
 
@@ -158,9 +158,7 @@ class _StarRatingState extends State<StarRating> {
       _currentRating = index + 1;
     });
 
-    if (widget.onRatingChanged != null) {
-      widget.onRatingChanged!(_currentRating);
-    }
+    widget.onRatingChanged?.call(_currentRating);
   }
 
   @override
@@ -168,25 +166,19 @@ class _StarRatingState extends State<StarRating> {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: List.generate(widget.maxStars, (index) {
-        return SizedBox(
-          width: 15,
-          height: 3,
-          child: GestureDetector(
-            onTap: () => _onStarTapped(index),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 3),
-              child: Icon(
-                index < _currentRating ? Icons.star : Icons.star_border,
-                color: Colors.amber,
-                size: widget.starSize,
-              ),
-            ),
+        return GestureDetector(
+          onTap: () => _onStarTapped(index),
+          child: Icon(
+            index < _currentRating ? Icons.star : Icons.star_border,
+            color: Colors.amber,
+            size: widget.starSize,
           ),
         );
       }),
     );
   }
 }
+
 
 
 Widget patientNumberCard(
