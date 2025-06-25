@@ -27,7 +27,22 @@
   <img src="assets/images/screenshots/06_DoctorLiveChatscreen.jpg" width="15%" />
   <img src="assets/images/screenshots/07_Finddoctorsscreen.jpg" width="15%" />
   <img src="assets/images/screenshots/11_Favouritedoctorsscreen.jpg" width="15%" />
+  <img src="assets/images/screenshots/08_DoctorSelectTimescreen-01.jpg" width="15%" />
+  <img src="assets/images/screenshots/09_DoctorSelectTimescreen-02.jpg" width="15%" />
+  <img src="assets/images/screenshots/10_Poplulardoctorscreen.jpg" width="15%" />
 </p>
+
+<p float="left">
+  <img src="assets/images/screenshots/12_Doctordetailsscreen.jpg" width="15%" />
+  <img src="assets/images/screenshots/13_Doctorappointmentscreen-01.jpg" width="15%" />
+  <img src="assets/images/screenshots/35_Privacypolicyscreen.jpg" width="15%" />
+  <img src="assets/images/screenshots/08_DoctorSelectTimescreen-01.jpg" width="15%" />
+  <img src="assets/images/screenshots/09_DoctorSelectTimescreen-02.jpg" width="15%" />
+  <img src="assets/images/screenshots/10_Poplulardoctorscreen.jpg" width="15%" />
+</p>
+
+
+
 
 ## 🚀 Getting Started
 
