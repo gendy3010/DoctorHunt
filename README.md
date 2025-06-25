@@ -14,11 +14,10 @@ Doctor Hunt is a Flutter-based mobile application designed to simplify the proce
 
 ## 📸 Screenshots
 
-### Login Screen
+### Menu Screen
 ![Menu Screen](assets/images/screenshots/menu_screen.jpg)
 
 
-> Images must exist in the `assets/images` folder inside your repository to render correctly here.
 
 ## 🚀 Getting Started
 
