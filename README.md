@@ -14,6 +14,20 @@ Doctor Hunt is a Flutter-based mobile application designed to simplify the proce
 
 ## 📸 Screenshots
 
+### Splash Screen
+![Splash Screen](assets/images/screenshots/01_Splash screen.jpg)
+### OnBoarding Screen
+![OnBoarding Screen](assets/images/screenshots/02_Onboarding screen-01 (1).jpg)
+### Sign Up Screen
+![Sign Up Screen](assets/images/screenshots/16_Sign up screen.jpg)
+### Login Screen
+![Login Screen](assets/images/screenshots/17_Login screen-01.jpg)
+### Menu Screen
+![Menu Screen](assets/images/screenshots/menu_screen.jpg)
+### Menu Screen
+![Menu Screen](assets/images/screenshots/menu_screen.jpg)
+### Menu Screen
+![Menu Screen](assets/images/screenshots/menu_screen.jpg)
 ### Menu Screen
 ![Menu Screen](assets/images/screenshots/menu_screen.jpg)
 
