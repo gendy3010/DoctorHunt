@@ -14,26 +14,21 @@
 
 ## 📸 Screenshots
 
-### Splash Screen
-![Splash Screen](assets/images/screenshots/01_Splash%20screen.jpg)
+<p float="left">
+  <img src="assets/images/screenshots/01_Splash%20screen.jpg" width="30%" />
+  <img src="assets/images/screenshots/02_Onboarding%20screen-01%20(1).jpg" width="30%" />
+  <img src="assets/images/screenshots/16_Sign%20up%20screen.jpg" width="30%" />
+</p>
 
-### OnBoarding Screen
-![OnBoarding Screen](assets/images/screenshots/02_Onboarding%20screen-01%20(1).jpg)
+<p float="left">
+  <img src="assets/images/screenshots/17_Login%20screen-01.jpg" width="30%" />
+  <img src="assets/images/screenshots/menu_screen.jpg" width="30%" />
+  <img src="assets/images/screenshots/doctor_screen.jpg" width="30%" />
+</p>
 
-### Sign Up Screen
-![Sign Up Screen](assets/images/screenshots/16_Sign%20up%20screen.jpg)
-
-### Login Screen
-![Login Screen](assets/images/screenshots/17_Login%20screen-01.jpg)
-
-### Menu Screen
-![Menu Screen](assets/images/screenshots/menu_screen.jpg)
-
-### Doctor Screen
-![Doctor Screen](assets/images/screenshots/doctor_screen.jpg)
-
-### Pharmacy Screen
-![Pharmacy Screen](assets/images/screenshots/pharmacy_screen.jpg)
+<p float="left">
+  <img src="assets/images/screenshots/pharmacy_screen.jpg" width="30%" />
+</p>
 
 ## 🚀 Getting Started
 

@@ -2,13 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../../config/app_routes.dart';
 import '../../widgets/buttons/Custom Button.dart';
-import '../../widgets/buttons/book_now_button.dart';
 import '../../widgets/header/top_section.dart';
-import '../../widgets/search/custom_search_bar.dart';
 
 class EnableLocationServices extends StatelessWidget {
   EnableLocationServices({super.key});

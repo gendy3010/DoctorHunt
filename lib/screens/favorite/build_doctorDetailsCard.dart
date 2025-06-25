@@ -6,7 +6,6 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../widgets/buttons/book_now_button.dart';
 
 Widget buildDoctorDetailsCard(
     String name,
