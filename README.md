@@ -26,6 +26,14 @@
   <img src="assets/images/screenshots/05_Homescreen.jpg" width="30%" />
 </p>
 
+<p float="left">
+  <img src="assets/images/screenshots/06_DoctorLiveChatscreen.jpg" width="30%" />
+  <img src="assets/images/screenshots/07_Finddoctorsscreen.jpg" width="30%" />
+  <img src="assets/images/screenshots/11_Favouritedoctorsscreen.jpg" width="30%" />
+</p>
+
+
+
 
 
 ## 🚀 Getting Started
