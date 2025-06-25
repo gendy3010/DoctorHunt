@@ -18,11 +18,11 @@
   <img src="assets/images/screenshots/01_Splash%20screen.jpg" width="30%" />
   <img src="assets/images/screenshots/02_Onboarding%20screen-01%20(1).jpg" width="30%" />
   <img src="assets/images/screenshots/16_Sign%20up%20screen.jpg" width="30%" />
- <img src="assets/images/screenshots/17_Login%20screen-01.jpg" width="30%" />
-  <img src="assets/images/screenshots/menu_screen.jpg" width="30%" />
 </p>
 
 <p float="left">
+  <img src="assets/images/screenshots/17_Login%20screen-01.jpg" width="30%" />
+  <img src="assets/images/screenshots/menu_screen.jpg" width="30%" />
   <img src="assets/images/screenshots/05_Homescreen.jpg" width="30%" />
 </p>
 
